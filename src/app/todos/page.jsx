@@ -4,7 +4,7 @@ const ToDosPage = async () => {
 
     const res = await fetch("https://jsonplaceholder.typicode.com/todos");
     const todos = await res.json();
-    console.log(todos);
+    console.log("todos:", todos);
     return (
         <div>
             <h2>ToDos{todos.length}</h2>
